@@ -1,18 +1,31 @@
-import pandas as pd                                                             #loading all the Required libraries
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.cluster import KMeans
-from yellowbrick.cluster import SilhouetteVisualizer
-from sklearn.metrics import silhouette_score, silhouette_samples
-from sklearn.ensemble import IsolationForest  
-import warnings                                                                 # Removing all those annoying Warnings
-warnings.filterwarnings('ignore')
-warnings.simplefilter('ignore')
-from sklearn.decomposition import PCA
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from mpl_toolkits import mplot3d
-from pylab import rcParams                                                      
-rcParams['figure.figsize'] = 30, 10
-import scipy.cluster.hierarchy as sch
+numpy
+scipy
+scikit-learn
+matplotlib
+pandas
+fastapi
+uvicorn
+gunicorn==19.9.0
+uvloop
+httptools
+
+
+
+#import pandas as pd                                                             #loading all the Required libraries
+#import numpy as np
+#import matplotlib.pyplot as plt
+#import seaborn as sns
+#from sklearn.preprocessing import MinMaxScaler
+#from sklearn.cluster import KMeans
+#from yellowbrick.cluster import SilhouetteVisualizer
+#from sklearn.metrics import silhouette_score, silhouette_samples
+#from sklearn.ensemble import IsolationForest  
+#import warnings                                                                 # Removing all those annoying Warnings
+#warnings.filterwarnings('ignore')
+#warnings.simplefilter('ignore')
+#from sklearn.decomposition import PCA
+#from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+#from mpl_toolkits import mplot3d
+#from pylab import rcParams                                                      
+#rcParams['figure.figsize'] = 30, 10
+#import scipy.cluster.hierarchy as sch
