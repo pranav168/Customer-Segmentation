@@ -15,7 +15,7 @@ def index():
     return {'message': 'Hey Team, how are you doing today?'}
 
 @app.post('/predict')                    # Lets Predict the customer segment
-def predict_banknote(data:BankNote):     #    JSON data and return the predicted Bank Note with the confidence
+def predict_banknote(data:CustomerInfo):     #    JSON data and return the predicted Bank Note with the confidence
     data = data.dict()                   # Order_Status_0','Order_Status_1','Days Before Last Trans','Avg Amount','Total Amount','Avg_Quantity
     Order_Status_0=data['Order_Status_0']
     Order_Status_1=data['Order_Status_1']
