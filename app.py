@@ -19,7 +19,7 @@ def predict_banknote(data:BankNote):     #    JSON data and return the predicted
     data = data.dict()                   # Order_Status_0','Order_Status_1','Days Before Last Trans','Avg Amount','Total Amount','Avg_Quantity
     Order_Status_0=data['Order_Status_0']
     Order_Status_1=data['Order_Status_1']
-    Days_Before Last Trans=data['Days Before Last Trans']
+    Days_Before_Last_Trans=data['Days Before Last Trans']
     Avg_Amount=data['Avg Amount']
     Total_Amount=data['Total Amount']
     Avg_Quantity=data['Avg_Quantity']
