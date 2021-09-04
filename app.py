@@ -1,6 +1,6 @@
 import uvicorn                          # importing Libraries
 from fastapi import FastAPI
-from BankNotes import BankNote
+from CustomerInfo import CustomerInfo
 import numpy as np
 import pickle
 import pandas as pd
@@ -24,7 +24,7 @@ def predict_banknote(data:BankNote):     #    JSON data and return the predicted
     Total_Amount=data['Total Amount']
     Avg_Quantity=data['Avg_Quantity']
    # print(classifier.predict([[variance,skewness,curtosis,entropy]]))
-    prediction = classifier.predict([[Order_Status_0,Order_Status_1,Days Before Last Trans,Avg Amount,Total Amount,Avg_Quantity]])
+    prediction = classifier.predict([[Order_Status_0,Order_Status_1,Days_Before_Last_Trans,Avg_Amount,Total_Amount,Avg_Quantity]])
     return {
         'prediction': prediction
     }
